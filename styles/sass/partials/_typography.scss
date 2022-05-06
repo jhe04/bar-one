@@ -5,9 +5,10 @@ html {
 h1 {
   font-family: $secondaryFont, sans-serif;
   font-size: 261.4px;
-  text-align: center;
   letter-spacing: 2.4px;
   color: $dustyOrange;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {

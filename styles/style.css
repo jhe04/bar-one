@@ -261,9 +261,10 @@ html {
 h1 {
   font-family: "Tulpen One", sans-serif;
   font-size: 261.4px;
-  text-align: center;
   letter-spacing: 2.4px;
   color: #ff8327;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -287,4 +288,105 @@ li {
   text-align: center;
   line-height: 29px;
   letter-spacing: 1.9px;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+a.button {
+  padding: 0 20px;
+  background-color: #bf2603;
+  color: #ffffff;
+  font-family: "Chathura", sans-serif;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul a {
+  padding: 20px 35px;
+  color: #ffffff;
+}
+nav ul a:hover {
+  color: #ff8327;
+  font-weight: bold;
+}
+nav ul .nav-title {
+  margin: auto 25px;
+  font-family: "Tulpen One", sans-serif;
+  color: #ffffff;
+}
+
+header {
+  background-image: url(../assets/home-image-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+header .header-title span {
+  text-align: left;
+  display: block;
+  font-family: "Chathura", sans-serif;
+  font-size: 83.2px;
+  margin-top: -90px;
+  margin-left: 10px;
+  color: #ffffff;
+}
+header .header-image {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
 }

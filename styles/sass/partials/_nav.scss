@@ -1,0 +1,17 @@
+nav ul {
+  display: flex;
+  justify-content: center;
+  a {
+    padding: 20px 35px;
+    color: $offWhite;
+    &:hover {
+      color: $dustyOrange;
+      font-weight: bold;
+    }
+  }
+  .nav-title {
+    margin: auto 25px;
+    font-family: $secondaryFont, sans-serif;
+    color: $offWhite;
+  }
+}
