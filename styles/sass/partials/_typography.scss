@@ -1,0 +1,35 @@
+html {
+  font-size: 125%;
+}
+
+h1 {
+  font-family: $secondaryFont, sans-serif;
+  font-size: 261.4px;
+  text-align: center;
+  letter-spacing: 2.4px;
+  color: $dustyOrange;
+}
+
+h2 {
+  font-family: $mainFont, sans-serif;
+  font-size: 68px;
+  font-weight: bold;
+  line-height: 58px;
+  letter-spacing: 2.2px;
+}
+
+p {
+  font-family: $mainFont, sans-serif;
+  font-size: 2rem;
+  line-height: 30px;
+  letter-spacing: 1.9px;
+}
+
+// for the nav bar
+li {
+  font-family: $mainFont, sans-serif;
+  font-size: 38px;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
