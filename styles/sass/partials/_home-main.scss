@@ -32,3 +32,36 @@
 }
 
 // SECTION TWO --------------
+.section-2 {
+  background-color: $darkRed;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  .empty-div,
+  .new-locations,
+  .plan-ahead {
+    flex-basis: 50%;
+    padding: 50px 100px;
+  }
+  .new-locations {
+    text-align: right;
+  }
+
+  //   images in section 2
+  .section-2-image1,
+  .section-2-image2 {
+    position: absolute;
+  }
+  .section-2-image1 {
+    top: -50px;
+    box-shadow: 20px 20px $dustyOrange;
+  }
+  .section-2-image2 {
+    bottom: -50px;
+    right: 0;
+    box-shadow: -20px 20px $dustyOrange;
+  }
+}
+
+// SECTION THREE --------------
