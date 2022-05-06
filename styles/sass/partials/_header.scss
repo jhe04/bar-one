@@ -9,6 +9,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 305px;
+  }
   .header-title {
     display: flex;
     flex-direction: column;
