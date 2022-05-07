@@ -116,3 +116,24 @@
     }
   }
 }
+
+// SECTION FOUR --------------
+.section-4 {
+  background-color: $darkRed;
+  padding: 100px 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// FOOTER ---------------------
+footer {
+  overflow: hidden; //remove white space at bottom of footer due to margin collapse
+  background-color: #2c2c2c;
+  color: $offWhite;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}
