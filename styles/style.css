@@ -463,6 +463,11 @@ header .header-image {
       flex-basis: 50%;
   padding: 50px 100px;
 }
+.section-2 .empty-div h2,
+.section-2 .new-locations h2,
+.section-2 .plan-ahead h2 {
+  margin-top: 0;
+}
 .section-2 .new-locations {
   text-align: right;
 }
