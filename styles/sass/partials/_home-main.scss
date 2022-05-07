@@ -1,6 +1,6 @@
 // SECTION ONE --------------
 .section-1 {
-  background-color: #111010;
+  background-color: $black;
   padding: 150px 0;
   .wrapper {
     display: flex;
@@ -65,3 +65,54 @@
 }
 
 // SECTION THREE --------------
+.section-3 {
+  background-color: $black;
+  padding: 100px 0;
+}
+
+.host-party,
+.events {
+  p {
+    color: $offWhite;
+  }
+  h2 {
+    color: $dustyOrange;
+  }
+}
+
+.host-party {
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.host-party-image {
+  background-image: url(../assets/banner-image.jpg);
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 100px 0;
+}
+
+.events {
+  .wrapper {
+    display: flex;
+    .events-info {
+      width: 75%;
+      padding-left: 50px;
+      h2,
+      p {
+        margin: 0;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .events-image {
+      width: 25%;
+      box-shadow: -20px 20px $dustyOrange;
+    }
+  }
+}

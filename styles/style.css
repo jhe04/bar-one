@@ -481,3 +481,64 @@ header .header-image {
   -webkit-box-shadow: -20px 20px #ff8327;
           box-shadow: -20px 20px #ff8327;
 }
+
+.section-3 {
+  background-color: #111010;
+  padding: 100px 0;
+}
+
+.host-party p,
+.events p {
+  color: #ffffff;
+}
+.host-party h2,
+.events h2 {
+  color: #ff8327;
+}
+
+.host-party {
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.host-party-image {
+  background-image: url(../assets/banner-image.jpg);
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 100px 0;
+}
+
+.events .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.events .wrapper .events-info {
+  width: 75%;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.events .wrapper .events-info h2,
+.events .wrapper .events-info p {
+  margin: 0;
+}
+.events .wrapper .events-image {
+  width: 25%;
+  -webkit-box-shadow: -20px 20px #ff8327;
+          box-shadow: -20px 20px #ff8327;
+}
