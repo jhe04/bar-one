@@ -1,5 +1,5 @@
-// background image
-header {
+// home page
+.home-page {
   background-image: url(../assets/home-image-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -36,4 +36,13 @@ header {
     right: 0;
     bottom: -100px;
   }
+}
+
+//blog page
+.blog-page {
+  background-image: url(../assets/blog-header-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
 }

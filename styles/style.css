@@ -349,7 +349,7 @@ nav ul .nav-title {
   color: #ffffff;
 }
 
-header {
+.home-page {
   background-image: url(../assets/home-image-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -367,7 +367,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header .wrapper {
+.home-page .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,7 +377,7 @@ header .wrapper {
           flex-direction: column;
   row-gap: 305px;
 }
-header .header-title {
+.home-page .header-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,7 +392,7 @@ header .header-title {
   z-index: 1;
   margin-bottom: 100px;
 }
-header .header-title span {
+.home-page .header-title span {
   text-align: left;
   display: block;
   font-family: "Chathura", sans-serif;
@@ -401,10 +401,18 @@ header .header-title span {
   margin-left: 10px;
   color: #ffffff;
 }
-header .header-image {
+.home-page .header-image {
   position: absolute;
   right: 0;
   bottom: -100px;
+}
+
+.blog-page {
+  background-image: url(../assets/blog-header-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
 }
 
 .section-1 {
