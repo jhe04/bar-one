@@ -461,7 +461,11 @@ footer p {
   display: -ms-flexbox;
   display: flex;
 }
-.section-1 .section-1-container div {
+.section-1 .section-1-container .fa-stack {
+  display: block;
+  width: 20%;
+}
+.section-1 .section-1-container .section-1-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,18 +473,15 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 90%;
+}
+.section-1 .section-1-container .fa-circle {
+  color: #bf2603;
 }
 .section-1 p,
 .section-1 h2 {
   margin: 20px 0 20px 30px;
   color: #ffffff;
-}
-.section-1 i {
-  background-color: #bf2603;
-  border-radius: 50%;
-  color: #ffffff;
-  font-size: 2rem;
-  padding: 15px;
 }
 
 .section-2 {
@@ -620,6 +621,16 @@ footer p {
   width: 100%;
 }
 
+.comments-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .comments {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,6 +649,24 @@ footer p {
 .comments .comments-content h3,
 .comments .comments-content p {
   margin: 0 0 10px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form button {
+  border: none;
+  padding: 0 20px;
+  background-color: #bf2603;
+  color: #ffffff;
+  font-family: "Chathura", sans-serif;
+  font-size: 2rem;
 }
 
 .blog-sidebar {

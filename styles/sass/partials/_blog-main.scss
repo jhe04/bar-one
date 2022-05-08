@@ -20,6 +20,13 @@
   }
 }
 
+// styling the comment section
+.comments-section {
+  display: flex;
+  flex-direction: column;
+}
+
+// for the individual comment posts
 .comments {
   display: flex;
   padding: 20px 0;
@@ -33,6 +40,21 @@
     p {
       margin: 0 0 10px;
     }
+  }
+}
+
+// formating the form
+form {
+  display: flex;
+  flex-direction: column;
+  
+  button {
+    border: none;
+    padding: 0 20px;
+    background-color: $rustRed;
+    color: $offWhite;
+    font-family: $mainFont, sans-serif;
+    font-size: 2rem;
   }
 }
 

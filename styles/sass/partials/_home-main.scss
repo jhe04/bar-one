@@ -9,9 +9,17 @@
   .section-1-container {
     width: 50%;
     display: flex;
-    div {
+    .fa-stack {
+      display: block;
+      width: 20%;
+    }
+    .section-1-content {
       display: flex;
       flex-direction: column;
+      width: 90%;
+    }
+    .fa-circle {
+      color: $rustRed;
     }
   }
   p,
@@ -21,14 +29,6 @@
   }
 
   //styling the icons
-
-  i {
-    background-color: $rustRed;
-    border-radius: 50%;
-    color: $offWhite;
-    font-size: 2rem;
-    padding: 15px;
-  }
 }
 
 // SECTION TWO --------------
@@ -129,5 +129,3 @@
     justify-content: space-between;
   }
 }
-
-
