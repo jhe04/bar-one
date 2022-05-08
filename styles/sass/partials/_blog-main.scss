@@ -69,8 +69,9 @@
     padding: 50px;
   }
   .article-image {
-    border-left: 20px solid $dustyOrange;
     position: relative;
+    width: calc(100% - 20px);
+    right: -20px;
     &::before {
       content: "";
       display: block;
@@ -79,6 +80,15 @@
       width: 95%;
       left: -20px;
       border-bottom: 20px solid $dustyOrange;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      border-left: 20px solid $dustyOrange;
+      height: 95%;
+      left: -20px;
+      bottom: 0;
     }
   }
 }
