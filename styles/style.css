@@ -603,24 +603,50 @@ footer p {
   background-color: #111010;
   color: #ffffff;
   padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
 }
 .blog-main h3 {
   color: #ff8327;
 }
-.blog-main .wrapper {
-  width: 70%;
-  margin: 0 0 0 30%;
-  padding: 50px 100px;
+.blog-main .blog-sidebar {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  background-color: #220303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 50px;
 }
-.blog-main .article-wrapper {
-  border: 4px solid #ff8327;
+.blog-main .blog-sidebar .recent-posts {
+  text-align: left;
+}
+.blog-main .blog-sidebar .recent-posts ul {
+  list-style-type: initial;
+  text-align: left;
+}
+.blog-main .main-wrapper {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
   position: relative;
 }
-.blog-main .article-image {
-  display: inline-block;
-  width: 100%;
+.blog-main .article-wrapper {
+  border-left: 4px solid #ff8327;
+  border-bottom: 4px solid #ff8327;
+  margin-left: 0;
 }
-
 .comments-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,14 +662,17 @@ footer p {
   display: -ms-flexbox;
   display: flex;
   padding: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .comments .comments-image {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
 }
 .comments .comments-content {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
   padding-left: 20px;
 }
 .comments .comments-content h3,
@@ -743,22 +772,4 @@ form button {
   color: #ffffff;
   font-family: "Tulpen One", sans-serif;
   font-size: 2rem;
-}
-
-.blog-sidebar {
-  background-color: #220303;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.blog-sidebar .recent-posts {
-  text-align: left;
-}
-.blog-sidebar .recent-posts ul {
-  list-style-type: initial;
-  text-align: left;
 }
