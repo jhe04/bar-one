@@ -45,4 +45,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20vh;
+  .blog-title {
+    margin-left: 200px;
+  }
+  h1 {
+    font-family: $mainFont, sans-serif;
+    color: $offWhite;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 58px;
+    letter-spacing: 2.2px;
+  }
 }
