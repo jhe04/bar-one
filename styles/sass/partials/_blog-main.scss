@@ -3,24 +3,54 @@
   color: $offWhite;
   padding: 50px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: flex-start;
-  position: relative;
+  column-gap: 2%;
   h3 {
     color: $dustyOrange;
   }
   // SIDEBAR SECTION
   .blog-sidebar {
-    flex-basis: 20%;
+    flex-basis: 25%;
     background-color: $darkRed;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     margin: 0 50px;
+    h2,
+    p {
+      margin: 0;
+    }
+    .blog-sidebar-image {
+      position: relative;
+      width: 115%;
+      top: -30px;
+      left: -70px;
+    }
+    .our-mission {
+      margin-bottom: 20px;
+      a {
+        font-family: $mainFont;
+        font-size: 2rem;
+        line-height: 1.5rem;
+        color: $dustyOrange;
+      }
+    }
     .recent-posts {
-      text-align: left;
+      display: flex;
+      flex-direction: column;
       ul {
-        list-style-type: initial;
-        text-align: left;
+        li {
+          text-align: start;
+          margin-left: 30px;
+          list-style-type: initial;
+          color: $rustRed;
+          font-size: 1rem;
+          span {
+            color: $offWhite;
+            font-size: 38px;
+          }
+        }
       }
     }
   }
@@ -28,14 +58,28 @@
   .main-wrapper {
     flex-basis: 70%;
     position: relative;
+    top: -150px;
   }
-  .article-wrapper {
+  .article-content {
     border-left: 4px solid $dustyOrange;
     border-bottom: 4px solid $dustyOrange;
-    margin-left: 0;
   }
+  .article-content,
   .comments-wrapper {
-    // padding-right: 50px;
+    padding: 50px;
+  }
+  .article-image {
+    border-left: 20px solid $dustyOrange;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -20px;
+      width: 95%;
+      left: -20px;
+      border-bottom: 20px solid $dustyOrange;
+    }
   }
 }
 
@@ -92,7 +136,6 @@ form {
     color: $offWhite;
     font-family: $mainFont, sans-serif;
     font-size: 1.5rem;
-    // line-height: 1px;
     outline: none;
   }
   input {
