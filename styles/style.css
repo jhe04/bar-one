@@ -660,12 +660,88 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+form .name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form .name-email .form-name,
+form .name-email .form-email {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form .name-email .form-name label,
+form .name-email .form-email label {
+  margin-left: 40px;
+}
+form label {
+  font-family: "Chathura";
+  font-size: 2rem;
+}
+form input,
+form textarea {
+  border: none;
+  background: transparent;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-family: "Chathura", sans-serif;
+  font-size: 1.5rem;
+  outline: none;
+}
+form input {
+  border-bottom: 1px solid #ff8327;
+}
+form textarea {
+  border: 1px solid #ff8327;
+  width: 100%;
+}
+form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+form textarea::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+form textarea:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+form textarea::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+form textarea::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+form textarea:focus + label, form textarea:active + label {
+  display: none;
+}
+form .comment-text {
+  position: relative;
+}
+form .comment-text label {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
 form button {
   border: none;
   padding: 0 20px;
   background-color: #bf2603;
   color: #ffffff;
-  font-family: "Chathura", sans-serif;
+  font-family: "Tulpen One", sans-serif;
   font-size: 2rem;
 }
 
