@@ -61,12 +61,20 @@
         <!-- Contact form -->
         <section class="contact-form-section">
           <form action="">
-            <label for="name">Name</label>
-            <input type="text" id="name" />
-            <label for="email">Email address</label>
-            <input type="text" id="email" />
-            <label for="message">Message</label>
-            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <div class="name-email">
+              <div class="form-name">
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="form-email">
+                <label for="email">Email address</label>
+                <input type="text" id="email" />
+              </div>
+            </div>
+            <div class="textarea-text">
+              <textarea name="" id="message" cols="30" rows="5"></textarea>
+              <label for="message">Message</label>
+            </div>
             <button>Submit</button>
           </form>
         </section>
