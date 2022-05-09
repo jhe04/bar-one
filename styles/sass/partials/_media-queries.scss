@@ -28,7 +28,8 @@
   }
 }
 
-@media (max-width: 750px) {
+// 750px
+@media (max-width: 800px) {
   // HOMEPAGE -----------------
 
   //   header
@@ -64,7 +65,7 @@
   }
   //   section 3 of main
   .section-3 {
-    padding: 30px 0;
+    padding: 30px 10px;
     .host-party {
       padding: 0;
       margin-bottom: 40px;
@@ -74,13 +75,21 @@
       display: none;
     }
     .events {
-      .wrapper {
-        align-items: center;
-      }
       .events-info {
         row-gap: 15px;
         text-align: right;
         align-items: flex-end;
+      }
+    }
+  }
+  //   section 4 of main
+  .section-4 {
+    .wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      div {
+        margin: 10px;
+        flex-basis: calc(50% - 20px);
       }
     }
   }
@@ -123,4 +132,149 @@
       flex-basis: 100%;
     }
   }
+}
+
+// 600px
+@media (max-width: 600px) {
+  // TYPOGRAPHY --------------
+  p {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  // NAVIGATION BAR --------------
+  .desktop-nav ul {
+    flex-wrap: wrap;
+    .nav-title {
+      order: -1;
+    }
+  }
+
+  // HOMEPAGE -------------
+
+  //   header
+  .home-page {
+    min-height: 60vh;
+    .wrapper {
+      row-gap: 70px;
+    }
+    h1 {
+      font-size: 130px;
+    }
+    .header-title {
+      margin-bottom: 0;
+      span {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+  }
+  //   main
+  .section-1 {
+    padding: 50px 0;
+  }
+  .section-4 {
+    padding: 10px 0;
+  }
+
+  // BLOG -------------
+  .blog-main {
+    .main-wrapper {
+      position: static;
+      .article-content,
+      .comments-wrapper {
+        padding: 10px;
+      }
+    }
+  }
+  .blog-page {
+    row-gap: 70px;
+    .blog-title {
+      margin-left: 70px;
+    }
+  }
+  // FORM -------------
+  form {
+    .name-email {
+      flex-direction: column;
+    }
+  }
+
+  // CONTACT -------------
+  .contact-page {
+    row-gap: 70px;
+    .contact-title {
+      margin-left: 70px;
+    }
+  }
+}
+
+// 450px
+@media (max-width: 450px) {
+  // HOMEPAGE -------------
+  .section-1 {
+    .section-1-container {
+      .fa-stack {
+        width: 30%;
+      }
+      .section-1-content {
+        width: 75%;
+      }
+    }
+  }
+  .section-3 {
+    padding: 10px;
+    .events {
+      .wrapper {
+        .events-info {
+          width: initial;
+          padding-left: 0;
+        }
+        .events-image {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section-4 {
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+
+  // BLOG -------------
+  .main-wrapper {
+    .comments-image {
+      display: none;
+    }
+  }
+  .blog-main {
+    .blog-sidebar {
+      margin: 10px 0;
+      padding: 20px;
+    }
+  }
+
+  .comments-wrapper,
+  .contact-form-section {
+    form {
+      input,
+      textarea {
+        font-size: 1rem;
+      }
+      label {
+        font-size: 1.5rem;
+      }
+      .form-name,
+      .form-email {
+        label {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  // CONTACT -------------
 }

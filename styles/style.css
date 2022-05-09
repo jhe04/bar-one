@@ -327,7 +327,7 @@ img {
   height: auto;
 }
 
-nav ul {
+.desktop-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,15 +335,15 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-nav ul a {
+.desktop-nav ul a {
   padding: 20px 35px;
   color: #ffffff;
 }
-nav ul a:hover {
+.desktop-nav ul a:hover {
   color: #ff8327;
   font-weight: bold;
 }
-nav ul .nav-title {
+.desktop-nav ul .nav-title {
   margin: auto 35px;
   font-family: "Tulpen One", sans-serif;
   color: #ffffff;
@@ -664,10 +664,14 @@ form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .events .wrapper .events-info {
   width: 75%;
   padding-left: 50px;
+  row-gap: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,7 +929,7 @@ form button {
     padding: 50px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .header-image {
     display: none;
   }
@@ -964,7 +968,7 @@ form button {
   }
 
   .section-3 {
-    padding: 30px 0;
+    padding: 30px 10px;
   }
   .section-3 .host-party {
     padding: 0;
@@ -974,17 +978,25 @@ form button {
   .section-3 .host-party-image {
     display: none;
   }
-  .section-3 .events .wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .section-3 .events .events-info {
     row-gap: 15px;
     text-align: right;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+
+  .section-4 .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-4 .wrapper div {
+    margin: 10px;
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
   }
 
   .blog-main {
@@ -1036,5 +1048,130 @@ form button {
     margin: 30px 0;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+@media (max-width: 600px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .desktop-nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .desktop-nav ul .nav-title {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  .home-page {
+    min-height: 60vh;
+  }
+  .home-page .wrapper {
+    row-gap: 70px;
+  }
+  .home-page h1 {
+    font-size: 130px;
+  }
+  .home-page .header-title {
+    margin-bottom: 0;
+  }
+  .home-page .header-title span {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .section-1 {
+    padding: 50px 0;
+  }
+
+  .section-4 {
+    padding: 10px 0;
+  }
+
+  .blog-main .main-wrapper {
+    position: static;
+  }
+  .blog-main .main-wrapper .article-content,
+.blog-main .main-wrapper .comments-wrapper {
+    padding: 10px;
+  }
+
+  .blog-page {
+    row-gap: 70px;
+  }
+  .blog-page .blog-title {
+    margin-left: 70px;
+  }
+
+  form .name-email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact-page {
+    row-gap: 70px;
+  }
+  .contact-page .contact-title {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 450px) {
+  .section-1 .section-1-container .fa-stack {
+    width: 30%;
+  }
+  .section-1 .section-1-container .section-1-content {
+    width: 75%;
+  }
+
+  .section-3 {
+    padding: 10px;
+  }
+  .section-3 .events .wrapper .events-info {
+    width: initial;
+    padding-left: 0;
+  }
+  .section-3 .events .wrapper .events-image {
+    display: none;
+  }
+
+  .section-4 .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .main-wrapper .comments-image {
+    display: none;
+  }
+
+  .blog-main .blog-sidebar {
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .comments-wrapper form input,
+.comments-wrapper form textarea,
+.contact-form-section form input,
+.contact-form-section form textarea {
+    font-size: 1rem;
+  }
+  .comments-wrapper form label,
+.contact-form-section form label {
+    font-size: 1.5rem;
+  }
+  .comments-wrapper form .form-name label,
+.comments-wrapper form .form-email label,
+.contact-form-section form .form-name label,
+.contact-form-section form .form-email label {
+    margin-left: 0px;
   }
 }
