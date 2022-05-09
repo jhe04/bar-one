@@ -1,0 +1,126 @@
+// 1200px
+@media (max-width: 1200px) {
+  // HOMEPAGE -----------------
+
+  //    header
+  .header-image {
+    width: 50%;
+  }
+  //   section 2 of main
+  .section-2 {
+    align-items: center;
+    .empty-div {
+      display: none;
+    }
+    .section-2-image1,
+    .section-2-image2 {
+      position: inherit;
+      flex-basis: 50%;
+      top: initial;
+      right: initial;
+      bottom: initial;
+      box-shadow: none;
+    }
+    .plan-ahead,
+    .new-locations {
+      padding: 50px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  // HOMEPAGE -----------------
+
+  //   header
+  .header-image {
+    display: none;
+  }
+  //   section 1 of main
+  .section-1 {
+    .wrapper {
+      flex-direction: column;
+    }
+    .section-1-container {
+      width: initial;
+    }
+    .fa-stack {
+      margin-top: 30px;
+    }
+  }
+  //   section 2 of main
+  .section-2 {
+    flex-direction: column;
+    .section-2-image1,
+    .section-2-image2 {
+      padding: 20px 0;
+    }
+    .plan-ahead,
+    .new-locations {
+      text-align: center;
+    }
+    .new-locations {
+      order: 1;
+    }
+  }
+  //   section 3 of main
+  .section-3 {
+    padding: 30px 0;
+    .host-party {
+      padding: 0;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    .host-party-image {
+      display: none;
+    }
+    .events {
+      .wrapper {
+        align-items: center;
+      }
+      .events-info {
+        row-gap: 15px;
+        text-align: right;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  // BLOG -----------------
+  .blog-main {
+    padding: 20px;
+    flex-direction: column;
+    .blog-sidebar {
+      flex-basis: initial;
+      order: 1;
+      padding: 40px;
+      text-align: center;
+      ul {
+        margin: 0 auto;
+      }
+      .blog-sidebar-image {
+        position: static;
+        width: 100%;
+      }
+    }
+    .main-wrapper {
+      flex-basis: initial;
+      top: -50px;
+    }
+  }
+
+  // CONTACT -----------------
+  .contact-wrapper {
+    padding: 10px 40px;
+    flex-direction: column;
+    align-items: initial;
+    .contact-info-section {
+      flex-basis: 100%;
+      text-align: center;
+    }
+    .contact-form-section {
+      position: static;
+      margin: 30px 0;
+      flex-basis: 100%;
+    }
+  }
+}
