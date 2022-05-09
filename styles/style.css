@@ -934,6 +934,9 @@ form button {
     display: none;
   }
 
+  .section-1 {
+    padding: 50px 0;
+  }
   .section-1 .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1087,7 +1090,7 @@ form button {
   }
 
   .section-1 {
-    padding: 50px 0;
+    padding: 25px 0;
   }
 
   .section-4 {
