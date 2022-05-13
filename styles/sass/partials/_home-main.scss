@@ -125,7 +125,7 @@
 // SECTION FOUR --------------
 .section-4 {
   background-color: $darkRed;
-  padding: 100px 0;
+  padding: 20px 0;
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -133,9 +133,14 @@
     width: 100%;
     max-width: 400px;
     height: 400px;
+    .slides {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
     .slide {
       width: 100%;
-      max-width: 1000px;
+      max-width: 400px;
       position: absolute;
       img {
         object-fit: cover;

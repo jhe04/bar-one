@@ -715,7 +715,7 @@ form button {
 
 .section-4 {
   background-color: #220303;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 .section-4 .wrapper {
   display: -webkit-box;
@@ -729,9 +729,14 @@ form button {
   max-width: 400px;
   height: 400px;
 }
+.section-4 .wrapper .slides {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
 .section-4 .wrapper .slide {
   width: 100%;
-  max-width: 1000px;
+  max-width: 400px;
   position: absolute;
 }
 .section-4 .wrapper .slide img {
