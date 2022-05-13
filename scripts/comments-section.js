@@ -30,9 +30,11 @@ const months = [
   "December",
 ];
 
-// submit event listener for the form
+// cache specific selectors
 const formEl = document.querySelector("form");
 const commentsEl = document.querySelector(".comments-section");
+
+// submit event listener for the form
 formEl.addEventListener("submit", function (e) {
   e.preventDefault();
 
