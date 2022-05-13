@@ -145,12 +145,15 @@
     font-size: 2.5rem;
   }
   // NAVIGATION BAR --------------
+  .hamburger-menu {
+    display: initial;
+  }
   .desktop-nav ul {
     display: flex;
     flex-direction: column;
     position: fixed;
     background-color: $black;
-    bottom: 20px;
+    bottom: 0px;
     left: -60%;
     z-index: 1;
     align-items: flex-start;

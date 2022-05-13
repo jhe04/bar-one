@@ -6,9 +6,11 @@
 //when user clicks, menu appears
 
 const menuButton = document.querySelector(".hamburger-menu");
-const navList = document.querySelector('#nav-list');
+const navList = document.querySelector("#nav-list");
 menuButton.addEventListener("click", function (e) {
-  console.log(e);
   //   menu appears on the page
-  navList.classList.toggle('reveal-menu');
+  navList.classList.toggle("reveal-menu");
+  // change the hamuburger menu to an 'x' when the menu is
+  this.children[0].classList.toggle("fa-bars");
+  this.children[0].classList.toggle("fa-x");
 });
