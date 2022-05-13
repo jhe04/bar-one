@@ -1,4 +1,9 @@
 // --------------------COMMENTS SECTION -------------------------
+// array containing pictures to use for comments
+const pictures = ["colin.jpg", "owen.jpg", "darsh.jpg", "safi.jpg"];
+const randomPicture = function (array) {
+  return array[Math.floor(Math.random() * array.length)];
+};
 
 //create array to store days of week
 const daysOfWeek = [
@@ -53,7 +58,7 @@ formEl.addEventListener("submit", function (e) {
   const commentsImageDiv = document.createElement("div");
   commentsImageDiv.classList.add("comments-image");
   const imageEl = document.createElement("img");
-  imageEl.src = "../assets/safi.jpg";
+  imageEl.src = `../assets/${randomPicture(pictures)}`;
   imageEl.alt = "User picture";
   commentsImageDiv.appendChild(imageEl);
 
