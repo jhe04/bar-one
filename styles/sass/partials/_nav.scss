@@ -1,6 +1,7 @@
 .desktop-nav ul {
   display: flex;
   justify-content: center;
+  
   a {
     padding: 20px 35px;
     color: $offWhite;
@@ -13,5 +14,19 @@
     margin: auto 35px;
     font-family: $secondaryFont, sans-serif;
     color: $offWhite;
+  }
+}
+
+.hamburger-menu {
+  color: $offWhite;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 3;
+  padding: 25px;
+  background-color: $dustyOrange;
+  box-shadow: 4px 4px $rustRed;
+  i {
+    font-size: 2rem;
   }
 }
