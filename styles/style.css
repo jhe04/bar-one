@@ -738,6 +738,8 @@ form button {
   width: 100%;
   max-width: 400px;
   position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .section-4 .wrapper .slide img {
   -o-object-fit: cover;
