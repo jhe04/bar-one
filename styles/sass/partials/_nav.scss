@@ -1,17 +1,36 @@
-.desktop-nav ul {
-  display: flex;
-  justify-content: center;
-  a {
-    padding: 20px 35px;
-    color: $offWhite;
-    &:hover {
-      color: $dustyOrange;
-      font-weight: bold;
+.desktop-nav {
+  ul {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: 20px 35px;
+      color: $offWhite;
+      &:hover {
+        color: $dustyOrange;
+        font-weight: bold;
+      }
+    }
+    .nav-title {
+      margin: auto 35px;
+      font-family: $secondaryFont, sans-serif;
+      color: $offWhite;
     }
   }
-  .nav-title {
-    margin: auto 35px;
-    font-family: $secondaryFont, sans-serif;
-    color: $offWhite;
+}
+
+.hamburger-menu {
+  display: none;
+  color: $offWhite;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 3;
+  padding: 25px;
+  background-color: $dustyOrange;
+  box-shadow: 4px 4px $rustRed;
+  i {
+    font-size: 2rem;
   }
 }

@@ -23,9 +23,12 @@
       <!-- NAV BAR -->
       <div class="wrapper">
         <nav class="desktop-nav">
-          <ul>
+          <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul id="nav-list">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="" class="about">About</a></li>
             <li class="nav-title">Bar-One</li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html">Contact</a></li>
@@ -153,6 +156,7 @@
                 </p>
               </div>
             </div>
+            <!-- APPEND ADDITONAL COMMENTS BELOW THIS -->
           </section>
           <!-- Form to add comments -->
           <form action="">
@@ -181,11 +185,33 @@
           </form>
         </div>
       </div>
+
+      <!-- about Modal -->
+      <section class="about-modal">
+        <div class="modal hidden">
+          <button class="close-modal">X</button>
+          <h2>About Us!</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </section>
+      <div class="overlay hidden"></div>
+      <!-- end of about modal -->
     </main>
     <!---------------- FOOTER SECTION ------------------->
     <footer>
       <!-- copyright info -->
       <p>Copyright © 2022 Juno</p>
     </footer>
+    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/comments-section.js"></script>
+    <script src="./scripts/about-modal.js"></script>
   </body>
 </html>

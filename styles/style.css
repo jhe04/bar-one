@@ -328,6 +328,7 @@ img {
 }
 
 .desktop-nav ul {
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,6 +348,22 @@ img {
   margin: auto 35px;
   font-family: "Tulpen One", sans-serif;
   color: #ffffff;
+}
+
+.hamburger-menu {
+  display: none;
+  color: #ffffff;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 3;
+  padding: 25px;
+  background-color: #ff8327;
+  -webkit-box-shadow: 4px 4px #bf2603;
+          box-shadow: 4px 4px #bf2603;
+}
+.hamburger-menu i {
+  font-size: 2rem;
 }
 
 .home-page {
@@ -698,7 +715,7 @@ form button {
 
 .section-4 {
   background-color: #220303;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 .section-4 .wrapper {
   display: -webkit-box;
@@ -707,6 +724,49 @@ form button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+}
+.section-4 .wrapper .slides {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.section-4 .wrapper .slide {
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.section-4 .wrapper .slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-4 .wrapper .btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #ff8327;
+}
+.section-4 .wrapper .btn:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: orange;
+}
+.section-4 .wrapper .btn-next {
+  top: 45%;
+  right: -20%;
+}
+.section-4 .wrapper .btn-prev {
+  top: 45%;
+  left: -20%;
 }
 
 .blog-main {
@@ -900,6 +960,38 @@ form button {
   border: 1px solid #ffffff;
 }
 
+.about-modal .modal {
+  color: #111010;
+  position: fixed;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10%;
+}
+.about-modal .modal .close-modal {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+.overlay {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .header-image {
     width: 50%;
@@ -1062,14 +1154,36 @@ form button {
     font-size: 2.5rem;
   }
 
+  .hamburger-menu {
+    display: initial;
+  }
+
   .desktop-nav ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    background-color: #111010;
+    bottom: 0px;
+    left: -60%;
+    z-index: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-transition: left 0.6s cubic-bezier(0.24, -1.05, 0.51, 1.77);
+    transition: left 0.6s cubic-bezier(0.24, -1.05, 0.51, 1.77);
   }
   .desktop-nav ul .nav-title {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+  }
+  .desktop-nav ul.reveal-menu {
+    left: 0px;
   }
 
   .home-page {

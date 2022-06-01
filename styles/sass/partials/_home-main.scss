@@ -125,9 +125,49 @@
 // SECTION FOUR --------------
 .section-4 {
   background-color: $darkRed;
-  padding: 100px 0;
+  padding: 20px 0;
   .wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    .slides {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+    .slide {
+      width: 100%;
+      max-width: 400px;
+      position: absolute;
+      transition: all 0.5s;
+      img {
+        object-fit: cover;
+      }
+    }
+    .btn {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      border: none;
+      border-radius: 50%;
+      z-index: 1;
+      background-color: $dustyOrange;
+      &:active {
+        transform: scale(1.05);
+        background-color: orange;
+      }
+    }
+    .btn-next {
+      top: 45%;
+      right: -20%;
+    }
+    .btn-prev {
+      top: 45%;
+      left: -20%;
+    }
   }
 }

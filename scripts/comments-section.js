@@ -1,0 +1,108 @@
+// --------------------COMMENTS SECTION -------------------------
+// array containing pictures to use for comments
+const pictures = ["colin.jpg", "owen.jpg", "darsh.jpg", "safi.jpg"];
+const randomPicture = function (array) {
+  return array[Math.floor(Math.random() * array.length)];
+};
+
+//create array to store days of week
+const daysOfWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+// cache specific selectors
+const formEl = document.querySelector("form");
+const commentsEl = document.querySelector(".comments-section");
+
+// submit event listener for the form
+formEl.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  //grab user's input
+  const name = document.querySelector("input[id=name]");
+  const comment = document.querySelector("textarea");
+  const email = document.querySelector("input[id=email]");
+
+  //   creating the date
+  const date = new Date();
+  const currentDate = `${daysOfWeek[date.getDay()]} ${
+    months[date.getMonth()]
+  } ${date.getDate()}, ${date.getFullYear()}`;
+  console.log(currentDate);
+
+  //   SETTING UP THE HTML TEMPLATE FOR COMMENTS
+
+  //   Main Div
+  const mainDiv = document.createElement("div");
+  mainDiv.classList.add("comments");
+
+  //   Image Div
+  const commentsImageDiv = document.createElement("div");
+  commentsImageDiv.classList.add("comments-image");
+  const imageEl = document.createElement("img");
+  imageEl.src = `../assets/${randomPicture(pictures)}`;
+  imageEl.alt = "User picture";
+  commentsImageDiv.appendChild(imageEl);
+
+  //   Comment Div
+  const commentsContentDiv = document.createElement("div");
+  commentsContentDiv.classList.add("comments-content");
+  const commentsHeading = document.createElement("h3");
+  commentsHeading.textContent = `${currentDate} by ${name.value}`;
+  const commentContent = document.createElement("p");
+  commentContent.textContent = `${comment.value}`;
+  commentsContentDiv.appendChild(commentsHeading);
+  commentsContentDiv.appendChild(commentContent);
+
+  //   Appending to Main Div
+  mainDiv.append(commentsImageDiv, commentsContentDiv);
+
+  //   Adding to the HTML
+  commentsEl.appendChild(mainDiv);
+
+  //   clearing the form fields;
+  name.value = "";
+  email.value = "";
+  comment.value = "";
+});
+
+// grab user's comment and put into the html
+
+// {<div class="comments-image">
+//                 <img
+//                   src="./assets/comment-image-1.jpg"
+//                   alt="headshot of Sulaire"
+//                 />
+//               </div>
+//               <div class="comments-content">
+//                 <h3>Tuesday October 9th, 2019 by Sulaire</h3>
+//                 <p>
+//                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+//                   Minima soluta dicta in similique atque voluptatum consequatur
+//                   blanditiis facilis laborum totam, animi quasi provident nisi
+//                   rem quibusdam omnis dolor ex quis vero iure consectetur
+//                   aspernatur incidunt sapiente? Voluptatibus et quisquam
+//                   tenetur?
+//                 </p>
+//               </div>
+//             </div>}
